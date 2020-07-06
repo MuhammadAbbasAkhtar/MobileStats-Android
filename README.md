@@ -9,3 +9,6 @@
 ### Whenever the stats are updated/ shown, the data is synced with server. Provided the server is up and running
 
 ###App Preview
+
+
+
