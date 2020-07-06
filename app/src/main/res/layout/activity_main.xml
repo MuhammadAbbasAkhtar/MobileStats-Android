@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewVoltage"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Voltage"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/voltage"
+                    android:layout_width="238dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="15sp"
+                    android:paddingStart="10sp"
+                    android:text="3786.293 mV"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textVieCurrent"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Current"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/current"
+                    android:layout_width="238dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="15sp"
+                    android:paddingStart="10sp"
+                    android:text="379331 mA"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textVieCharge"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Charge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/charge"
+                    android:layout_width="89dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="15sp"
+                    android:paddingStart="10sp"
+                    android:text="100%"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/batteryTechnology"
+                    android:layout_width="89dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="1"
+                    android:paddingStart="10sp"
+                    android:text="type"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewBDC"
+                    android:layout_width="157dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Batt. Design Capacity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/batteryDesignCapacity"
+                    android:layout_width="153dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="0sp"
+                    android:layout_marginTop="15sp"
+                    android:paddingStart="10sp"
+                    android:text="4100.0 mAh"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewBC"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Batt. Capacity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/batteryCapacity"
+                    android:layout_width="153dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="0sp"
+                    android:layout_marginTop="15sp"
+                    android:paddingStart="10sp"
+                    android:text="4100.0 mAh"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTemp"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Temperature"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/batteryTemp"
+                    android:layout_width="153dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="0sp"
+                    android:layout_marginTop="15sp"
+                    android:paddingStart="10sp"
+                    android:text="39.2 °C"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewStatus"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Status"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/batteryStatus"
+                    android:layout_width="153dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="0sp"
+                    android:layout_marginTop="15sp"
+                    android:paddingStart="10sp"
+                    android:text="Discharging"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/FreqDisplay"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:width="120sp"
+                    android:height="30sp"
+                    android:background="#B2FF59"
+                    android:foreground="@color/colorAccent"
+                    android:paddingTop="5sp"
+                    android:password="false"
+                    android:text="30 min"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/seekBarLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_weight="1"
+                        android:text="TextView" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        style="@style/Widget.AppCompat.SeekBar"
+                        android:layout_width="288dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_weight="1"
+                        android:thumbTint="#FF5290" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/syncInfo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_sync_black_48" />
+
+                <TextView
+                    android:id="@+id/progressInfo"
+                    android:layout_width="133dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/Exec"
+                    android:layout_width="110dp"
+                    android:layout_height="38dp"
+                    android:text="GO" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
